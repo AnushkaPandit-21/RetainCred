@@ -1,0 +1,5 @@
+data/raw/*
+!data/raw/BankChurners.csv
+__pycache__/
+.ipynb_checkpoints/
+.env
