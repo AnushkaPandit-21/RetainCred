@@ -1,7 +1,6 @@
 import streamlit as st
-import requests
-
-API_URL = "http://127.0.0.1:8000/predict"
+from src.inference.pipeline import full_prediction
+import pandas as pd
 
 st.title("💳 RetainCred — Churn Prediction & Offer Engine")
 
@@ -57,8 +56,8 @@ if st.button("Predict Customer Risk"):
         "Avg_Utilization_Ratio":Avg_Utilization_Ratio
     }
 
-    res = requests.post(API_URL, json=payload)
-    result = res.json()
+    df = pd.DataFrame([payload])
+    result = full_prediction(df)
 
     st.subheader("Prediction Result")
 
