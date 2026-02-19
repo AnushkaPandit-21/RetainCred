@@ -3,7 +3,7 @@
 ### AI-Powered Credit Card Churn Prediction, Segmentation & Personalized Offer Engine
 
 🔗 **Live App:**
-[https://retaincred-app-myfirstproject21042004.streamlit.app/](https://retaincred-app-myfirstproject21042004.streamlit.app/)
+[retaincred-app](https://retaincred-app-iownthisproject21042004.streamlit.app/)
 
 ---
 
